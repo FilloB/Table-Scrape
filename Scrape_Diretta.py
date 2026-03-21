@@ -40,9 +40,9 @@ try:
         
         if raw_text.upper() == "BYE" or raw_text == "" or raw_text == "(Bye)":
             continue
-            
-        players_formatted.append(raw_text)
         raw_text = raw_text.replace(". ", ".")
+
+        players_formatted.append(raw_text)
         
         if len(players_formatted) == n_players:
             break
