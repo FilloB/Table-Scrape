@@ -42,6 +42,7 @@ try:
             continue
             
         players_formatted.append(raw_text)
+        raw_text = raw_text.replace(". ", ".")
         
         if len(players_formatted) == n_players:
             break
