@@ -47,7 +47,7 @@ try:
         if len(players_formatted) == n_players:
             break
 
-    players_json = json.dumps(players_formatted, ensure_ascii=False)
+    players_json = json.dumps(players_formatted, ensure_ascii=True)
     print(players_json)
 
 finally:
