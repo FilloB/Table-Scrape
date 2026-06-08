@@ -26,11 +26,11 @@ try:
     except:
         pass 
         
-    wait.until(EC.presence_of_element_located((By.CLASS_NAME, "bracket__name")))
+    wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "span[class*='wcl-name']")))
     
     time.sleep(2)
     
-    elements = driver.find_elements(By.CLASS_NAME, "bracket__name")
+    elements = driver.find_elements(By.CSS_SELECTOR, "span[class*='wcl-name']")
     
     players_formatted = []
     
